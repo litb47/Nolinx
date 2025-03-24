@@ -281,7 +281,7 @@ if (contactForm) {
         document.getElementById('modalUserPhone').textContent = userPhone;
         
         // Send to Make
-        fetch('https://hook.eu2.make.com/mbvnhnut6bs9i3rmbtuwgjvhpu608ber', {
+        fetch('https://hook.eu2.make.com/hm86a1f61q26j1h6wbp4x2v15mqpcfox', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
