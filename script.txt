@@ -1,0 +1,289 @@
+// Language translations
+const translations = {
+    he: {
+        home: "דף הבית",
+        services: "שירותים",
+        contact: "צור קשר",
+        testimonials: "עדויות",
+        about: "עלינו",
+        heroTitle: "הפתרון לעסק שלך עם ניהול אוטומציה עסקית",
+        heroSubtitle: "שירותי האוטומציה של Nolinx מעניקים לכם להפעיל את העסק בצורה אוטומטית ולחסוך תהליכים את התהליכים שלכם.",
+        startNow: "התחל עכשיו",
+        whatWeDo: "מה אנחנו עושים?",
+        marketing: "שירותי אוטומציה לשיווק ומכירה",
+        marketingDesc: "חיסכו אוטומציות שחוסכות את השיווק ומקצות את כוח האדם בשיווק.",
+        business: "הפעלת תהליכים עסקיים",
+        businessDesc: "קיצור על המטלות שחוסכות לכם את העבודה והניהול.",
+        management: "פתרון ניהול העסק שלכם",
+        managementDesc: "חברה שמתאימה את התפקידות לצמיחה שלכם.",
+        contactTitle: "צור קשר",
+        contactSubtitle: "מלא פרטים ונחזור אליך עם נציגי האוטומציה שלנו!",
+        name: "שם מלא",
+        email: "אימייל",
+        phone: "טלפון",
+        message: "הודעה",
+        send: "שלח",
+        testimonialsTitle: "עדויות לקוחות",
+        aboutTitle: "עלינו",
+        aboutIntro: "אנחנו בנולינקס מתמחים בפתרונות אוטומציה לעסקים קטנים ובינוניים במטרה לייעל תהליכים ולהגדיל את הרווחיות שלכם.",
+        founder: "שם שלך",
+        founderPosition: "מייסד ומנכ\"ל",
+        founderBio: "כאן יופיע טקסט קצר עליך, רקע מקצועי, ניסיון או תחומי מומחיות. מומלץ 2-3 שורות קצרות.",
+        partner: "שם השותפה",
+        partnerPosition: "שותפה ומנהלת טכנולוגיות",
+        partnerBio: "כאן יופיע טקסט קצר על השותפה שלך, רקע מקצועי, ניסיון או תחומי מומחיות. מומלץ 2-3 שורות קצרות.",
+        missionTitle: "המשימה שלנו",
+        missionText: "המשימה שלנו היא לאפשר לעסקים להתמקד במה שחשוב באמת - צמיחה ויצירת ערך ללקוחות. אנחנו מאמינים שאוטומציה חכמה מאפשרת לעסקים להשתחרר ממשימות חוזרות ולהתמקד באסטרטגיה וחדשנות.",
+        footerRights: "כל הזכויות שמורות.",
+        contactInfo: "צור קשר",
+        phoneNumber: "טלפון:",
+        emailAddress: "אימייל:",
+        automationSolutions: "פתרונות אוטומציה עסקית",
+        thankYou: "תודה שפנית אלינו!",
+        detailsReceived: "הפרטים שלך התקבלו בהצלחה. נציג מטעמנו יחזור אליך בהקדם האפשרי.",
+        close: "סגור",
+        errorMessage: "אירעה שגיאה. אנא נסה שוב."
+    },
+    en: {
+        home: "Home",
+        services: "Services",
+        contact: "Contact",
+        testimonials: "Testimonials",
+        about: "About",
+        heroTitle: "Your Business Solution with Business Automation Management",
+        heroSubtitle: "Nolinx's automation services enable you to run your business automatically and save your processes.",
+        startNow: "Start Now",
+        whatWeDo: "What We Do",
+        marketing: "Marketing & Sales Automation Services",
+        marketingDesc: "Save automations that optimize your marketing manpower.",
+        business: "Business Process Automation",
+        businessDesc: "Shorten tasks that save you work and management.",
+        management: "Business Management Solution",
+        managementDesc: "A company that adapts roles to your growth.",
+        contactTitle: "Contact Us",
+        contactSubtitle: "Fill in your details and we'll get back to you with our automation representatives!",
+        name: "Full Name",
+        email: "Email",
+        phone: "Phone",
+        message: "Message",
+        send: "Send",
+        testimonialsTitle: "Client Testimonials",
+        aboutTitle: "About Us",
+        aboutIntro: "At Nolinx, we specialize in automation solutions for small and medium businesses with the goal of streamlining processes and increasing your profitability.",
+        founder: "Your Name",
+        founderPosition: "Founder & CEO",
+        founderBio: "Short text about you, professional background, experience or areas of expertise. Recommended 2-3 short lines.",
+        partner: "Partner's Name",
+        partnerPosition: "Co-founder & CTO",
+        partnerBio: "Short text about your partner, professional background, experience or areas of expertise. Recommended 2-3 short lines.",
+        missionTitle: "Our Mission",
+        missionText: "Our mission is to enable businesses to focus on what truly matters - growth and creating value for customers. We believe that smart automation allows businesses to break free from repetitive tasks and focus on strategy and innovation.",
+        footerRights: "All rights reserved.",
+        contactInfo: "Contact Information",
+        phoneNumber: "Phone:",
+        emailAddress: "Email:",
+        automationSolutions: "Business Automation Solutions",
+        thankYou: "Thank you for contacting us!",
+        detailsReceived: "Your details have been successfully received. Our representative will contact you as soon as possible.",
+        close: "Close",
+        errorMessage: "An error occurred. Please try again."
+    }
+};
+
+// Language state
+let currentLang = 'he';
+
+// DOM Elements
+const languageToggle = document.getElementById('languageToggle');
+const languageModal = document.getElementById('languageModal');
+const langOptions = document.querySelectorAll('.lang-option');
+const contactForm = document.querySelector('.contact-form');
+const startNowBtn = document.getElementById('startNowBtn');
+const backToTopBtn = document.getElementById('backToTop');
+
+// --- תפריט המבורגר למובייל ---
+
+// יסודות DOM
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+const body = document.body;
+
+// יצירת אלמנט הרקע לתפריט
+const menuOverlay = document.createElement('div');
+menuOverlay.className = 'menu-overlay';
+body.appendChild(menuOverlay);
+
+// טוגל פתיחה/סגירה של התפריט
+function toggleMenu() {
+    hamburgerMenu.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    menuOverlay.classList.toggle('active');
+    
+    // לחסום גלילה בזמן שהתפריט פתוח
+    if (navLinks.classList.contains('active')) {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = '';
+    }
+}
+
+// מאזיני אירועים
+if (hamburgerMenu) {
+    hamburgerMenu.addEventListener('click', toggleMenu);
+}
+menuOverlay.addEventListener('click', toggleMenu);
+
+// סגירת התפריט בלחיצה על קישור
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+
+// Close confirmation modal
+document.addEventListener('DOMContentLoaded', function() {
+    const closeModalBtn = document.querySelector('.close-modal-btn');
+    const modal = document.getElementById('thankYouModal');
+    
+    if (closeModalBtn && modal) {
+        closeModalBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+        
+        // Close modal when clicking outside card
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
+});
+});
+
+// התאמת הניווט כאשר גודל המסך משתנה
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+        toggleMenu();
+    }
+});
+
+// Start Now Button Functionality
+startNowBtn.addEventListener('click', () => {
+    const contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+// Back to Top Button Functionality
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('visible');
+    } else {
+        backToTopBtn.classList.remove('visible');
+    }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Function to directly toggle language without showing modal
+function toggleLanguage() {
+    currentLang = currentLang === 'he' ? 'en' : 'he';
+    updateLanguage();
+    languageToggle.textContent = currentLang === 'he' ? 'EN' : 'עב';
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = currentLang === 'he' ? 'rtl' : 'ltr';
+}
+
+// Language switching functionality
+// Direct toggle on click for better UX
+languageToggle.addEventListener('click', toggleLanguage);
+
+// Keep modal option for those who prefer choosing from menu
+langOptions.forEach(option => {
+    option.addEventListener('click', () => {
+        const newLang = option.dataset.lang;
+        if (newLang !== currentLang) {
+            currentLang = newLang;
+            updateLanguage();
+            languageToggle.textContent = newLang === 'he' ? 'EN' : 'עב';
+            document.documentElement.lang = newLang;
+            document.documentElement.dir = newLang === 'he' ? 'rtl' : 'ltr';
+        }
+        languageModal.style.display = 'none';
+    });
+});
+
+// Close modal when clicking outside
+window.addEventListener('click', (e) => {
+    if (e.target === languageModal) {
+        languageModal.style.display = 'none';
+    }
+});
+
+// --- שיפור חווית משתמש במובייל ---
+
+// התאמת גודל הגופן עבור מסכים קטנים
+function adjustFontSizes() {
+    const isMobile = window.innerWidth <= 768;
+    
+    document.documentElement.style.setProperty(
+        '--heading-font-size', 
+        isMobile ? 'clamp(1.2rem, 5vw, 1.8rem)' : 'clamp(1.5rem, 3vw, 2.5rem)'
+    );
+    
+    document.documentElement.style.setProperty(
+        '--subheading-font-size', 
+        isMobile ? 'clamp(1rem, 4vw, 1.5rem)' : 'clamp(1.2rem, 2vw, 1.8rem)'
+    );
+    
+    document.documentElement.style.setProperty(
+        '--body-font-size', 
+        isMobile ? 'clamp(0.85rem, 3vw, 1rem)' : 'clamp(0.9rem, 1.5vw, 1.1rem)'
+    );
+}
+
+// התאמת גובה תמונות באודות
+function adjustProfileImageHeight() {
+    const profileImages = document.querySelectorAll('.profile-image');
+    
+    profileImages.forEach(image => {
+        // וידוא שגובה התמונה זהה לרוחבה (יחס גובה-רוחב 1:1)
+        if (image.offsetWidth) {
+            image.style.height = `${image.offsetWidth}px`;
+        }
+    });
+}
+
+// התאמת גובה כרטיסי שירות לגובה אחיד
+function adjustCardHeights() {
+    if (window.innerWidth > 768) {
+        const serviceCards = document.querySelectorAll('.service-card');
+        let maxHeight = 0;
+        
+        // איפוס גובה קודם
+        serviceCards.forEach(card => {
+            card.style.height = 'auto';
+        });
+        
+        // מציאת הגובה המקסימלי
+        serviceCards.forEach(card => {
+            maxHeight = Math.max(maxHeight, card.offsetHeight);
+        });
+        
+        // קביעת גובה אחיד
+        serviceCards.forEach(card => {
+            card.style.height = `${maxHeight}px`;
+        });
+    } else {
+        // במובייל, אפשר גובה דינמי
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.style.height = 'auto';
+        });
+    }
+}

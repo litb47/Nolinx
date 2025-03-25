@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Nolinx - פתרונות אוטומציה עסקית המסייעים לעסקים לחסוך זמן ולייעל תהליכים">
+    <meta name="theme-color" content="#3498db">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Preconnect and preload לשיפור ביצועים -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Preload של משאבים קריטיים -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <title>Nolinx - פתרונות אוטומציה </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon לכל סוגי המכשירים -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nolinx</div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links">
+                <a href="#home">דף הבית</a>
+                <a href="#services">שירותים</a>
+                <a href="#contact">צור קשר</a>
+                <a href="#testimonials">עדויות</a>
+                <a href="#about">עלינו</a>
+                <button id="languageToggle" class="lang-toggle">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>הפתרון לעסק שלך עם ניהול אוטומציה</h1>
+            <p>שירותי האוטומציה של Nolinx מעניקים לכם להפעיל את העסק בצורה אוטומטית ולחסוך תהליכים את התהליכים שלכם.</p>
+            <button class="cta-button" id="startNowBtn">התחל עכשיו</button>
+        </section>
+
+        <section id="services" class="services">
+            <h2>מה אנחנו עושים?</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>שירותי אוטומציה לשיווק ומכירה</h3>
+                    <p>חיסכו אוטומציות שחוסכות את השיווק ומקצות את כוח האדם בשיווק.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>הפעלת תהליכים עסקיים</h3>
+                    <p>קיצור על המטלות שחוסכות לכם את העבודה והניהול.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>פתרון ניהול העסק שלכם</h3>
+                    <p>חברה שמתאימה את התפקידות לצמיחה שלכם.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section with Team Profiles -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>עלינו</h2>
+                <div class="about-content">
+                    <p class="about-intro">אנחנו בנולינקס מתמחים בפתרונות אוטומציה לעסקים קטנים ובינוניים במטרה לייעל תהליכים ולהגדיל את הרווחיות שלכם.</p>
+                    
+                    <div class="team-container">
+                        <div class="team-member">
+                            <div class="profile-image">
+                                <img src="images/profile1-small.jpg" 
+                                     srcset="images/profile1-small.jpg 300w,
+                                             images/profile1.jpg 600w"
+                                     sizes="(max-width: 768px) 120px, 150px"
+                                     alt="שם שלך">
+                            </div>
+                            <h3>שם שלך</h3>
+                            <p class="position">מייסד ומנכ"ל</p>
+                            <p class="bio">כאן יופיע טקסט קצר עליך, רקע מקצועי, ניסיון או תחומי מומחיות. מומלץ 2-3 שורות קצרות.</p>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="profile-image">
+                                <img src="images/profile2-small.jpg" 
+                                     srcset="images/profile2-small.jpg 300w,
+                                             images/profile2.jpg 600w"
+                                     sizes="(max-width: 768px) 120px, 150px"
+                                     alt="שם השותפה">
+                            </div>
+                            <h3>שם השותפה</h3>
+                            <p class="position">שותפה ומנהלת טכנולוגיות</p>
+                            <p class="bio">כאן יופיע טקסט קצר על השותפה שלך, רקע מקצועי, ניסיון או תחומי מומחיות. מומלץ 2-3 שורות קצרות.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-mission">
+                        <h3>המשימה שלנו</h3>
+                        <p>המשימה שלנו היא לאפשר לעסקים להתמקד במה שחשוב באמת - צמיחה ויצירת ערך ללקוחות. אנחנו מאמינים שאוטומציה חכמה מאפשרת לעסקים להשתחרר ממשימות חוזרות ולהתמקד באסטרטגיה וחדשנות.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>צור קשר</h2>
+            <form id="contactForm" class="contact-form">
+           <!---- <form name="contact" method="POST" data-netlify="true" class="contact-form"> -->
+                <input type="hidden" name="form-name" value="contact" />
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="שם מלא">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="אימייל">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone"  placeholder="טלפון"  dir="rtl" style="text-align: right;" pattern="[0-9]*" inputmode="numeric" required >
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="הודעה"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">שלח</button>
+            </form>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>עדויות לקוחות</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Nolinx שינתה את הדרך שבה אנחנו מנהלים את העסק שלנו. הכל הפך לאוטומטי ויעיל יותר."</p>
+                    <div class="client-info">
+                        <img src="images/client1-small.jpg" 
+                             srcset="images/client1-small.jpg 100w,
+                                     images/client1.jpg 200w"
+                             sizes="(max-width: 768px) 40px, 50px"
+                             loading="lazy"
+                             alt="דוד כהן">
+                        <div>
+                            <h4>דוד כהן</h4>
+                            <p>מנכ"ל, חברת טכנולוגיה</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nolinx</h3>
+                <p>פתרונות אוטומציה עסקית</p>
+            </div>
+            <div class="footer-section">
+                <h3>צור קשר</h3>
+                <p>טלפון: 03-1234567</p>
+                <p>אימייל: info@nolinx.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nolinx. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <div id="languageModal" class="modal">
+        <div class="modal-content">
+            <h2>בחר שפה</h2>
+            <button class="lang-option" data-lang="he">עברית</button>
+            <button class="lang-option" data-lang="en">English</button>
+        </div>
+    </div>
+
+    <!-- חלון אישור שליחת הטופס -->
+    <div id="thankYouModal">
+        <div class="modal-particles" id="modalParticles"></div>
+        <div class="thank-you-card">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2 class="thank-you-title">תודה שפנית אלינו!</h2>
+            <p class="thank-you-message">הפרטים שלך התקבלו בהצלחה. נציג מטעמנו יחזור אליך בהקדם האפשרי.</p>
+            
+            <div class="user-details">
+                <p><strong>שם:</strong> <span id="modalUserName"></span></p>
+                <p><strong>אימייל:</strong> <span id="modalUserEmail"></span></p>
+                <p><strong>טלפון:</strong> <span id="modalUserPhone"></span></p>
+            </div>
+            
+            <button class="close-modal-btn">סגור</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
