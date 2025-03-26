@@ -6,7 +6,7 @@
 
 2. הוסף את השורה הבאה לדף ה-HTML שלך, לפני תג ה-</body>:
    ```html
-   <script data-filename="components/chatbot/ExportDialog" data-linenumber="238" data-visual-selector-id="components/chatbot/ExportDialog238" src="./chatbot.js"></script>
+   <script data-filename="components/chatbot/ExportDialog" data-linenumber="238" data-visual-selector-id="components/chatbot/ExportDialog238" src="chatbot.js"></script>
    ```
 
    * שים לב לעדכן את הנתיב לקובץ ה-JS בהתאם למיקום שבחרת
