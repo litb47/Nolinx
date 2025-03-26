@@ -1,4 +1,4 @@
-# גרשון Chatbot
+# כ Chatbot
 
 ## התקנה
 
@@ -8,17 +8,10 @@
      <script data-filename="components/chatbot/ExportDialog" data-linenumber="264" data-visual-selector-id="components/chatbot/ExportDialog264" src="./chatbot.js"></script>
      ```
 
-<<<<<<< HEAD
    * אם הקובץ `chatbot.js` נמצא בתיקיית `js`:
      ```html
      <script data-filename="components/chatbot/ExportDialog" data-linenumber="269" data-visual-selector-id="components/chatbot/ExportDialog269" src="./js/chatbot.js"></script>
      ```
-=======
-2. הוסף את השורה הבאה לדף ה-HTML שלך, לפני תג ה-</body>:
-   ```html
-   <script data-filename="components/chatbot/ExportDialog" data-linenumber="238" data-visual-selector-id="components/chatbot/ExportDialog238" src="chatbot.js"></script>
-   ```
->>>>>>> 7f1ce8f2e2d68409ae8eb7a24c4d7604a1d1a476
 
    * אם הקובץ `chatbot.js` נמצא בספרייה שמעל:
      ```html
