@@ -1,6 +1,8 @@
 
-// לירן Chatbot - Created with NOLINX
-(function() {
+// גרשון Chatbot - Created with NOLINX
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("NOLINX Chatbot initializing...");
+  
   const config = {
   "active": true,
   "colors": {
@@ -172,6 +174,8 @@
   }
 ];
 
+  console.log("Chatbot config loaded, creating UI...");
+
   const style = document.createElement('style');
   style.textContent = `
     .nolinx-chatbot-button {
@@ -285,34 +289,37 @@
     }
   `;
 
-  const chatbotHTML = `
-    <button data-filename="components/chatbot/ExportDialog" data-linenumber="143" data-visual-selector-id="components/chatbot/ExportDialog143" class="nolinx-chatbot-button" title="צ'אט">
-      <svg data-filename="components/chatbot/ExportDialog" data-linenumber="144" data-visual-selector-id="components/chatbot/ExportDialog144" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path data-filename="components/chatbot/ExportDialog" data-linenumber="145" data-visual-selector-id="components/chatbot/ExportDialog145" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+  document.head.appendChild(style);
+  console.log("Chatbot styles added");
+
+  const container = document.createElement('div');
+  container.id = 'nolinx-chatbot-container';
+  container.innerHTML = `
+    <button data-filename="components/chatbot/ExportDialog" data-linenumber="152" data-visual-selector-id="components/chatbot/ExportDialog152" class="nolinx-chatbot-button" title="צ'אט">
+      <svg data-filename="components/chatbot/ExportDialog" data-linenumber="153" data-visual-selector-id="components/chatbot/ExportDialog153" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path data-filename="components/chatbot/ExportDialog" data-linenumber="154" data-visual-selector-id="components/chatbot/ExportDialog154" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
       </svg>
     </button>
-    <div data-filename="components/chatbot/ExportDialog" data-linenumber="148" data-visual-selector-id="components/chatbot/ExportDialog148" class="nolinx-chatbot-window">
-      <div data-filename="components/chatbot/ExportDialog" data-linenumber="149" data-visual-selector-id="components/chatbot/ExportDialog149" class="nolinx-chatbot-header">
-        <div data-filename="components/chatbot/ExportDialog" data-linenumber="150" data-visual-selector-id="components/chatbot/ExportDialog150">
-          <div data-filename="components/chatbot/ExportDialog" data-linenumber="151" data-visual-selector-id="components/chatbot/ExportDialog151" style="font-weight: bold">שירות לקוחות</div>
-          <div data-filename="components/chatbot/ExportDialog" data-linenumber="152" data-visual-selector-id="components/chatbot/ExportDialog152" style="font-size: 0.8em">נציג שירות</div>
+    <div data-filename="components/chatbot/ExportDialog" data-linenumber="157" data-visual-selector-id="components/chatbot/ExportDialog157" class="nolinx-chatbot-window">
+      <div data-filename="components/chatbot/ExportDialog" data-linenumber="158" data-visual-selector-id="components/chatbot/ExportDialog158" class="nolinx-chatbot-header">
+        <div data-filename="components/chatbot/ExportDialog" data-linenumber="159" data-visual-selector-id="components/chatbot/ExportDialog159">
+          <div data-filename="components/chatbot/ExportDialog" data-linenumber="160" data-visual-selector-id="components/chatbot/ExportDialog160" style="font-weight: bold">שירות לקוחות</div>
+          <div data-filename="components/chatbot/ExportDialog" data-linenumber="161" data-visual-selector-id="components/chatbot/ExportDialog161" style="font-size: 0.8em">נציג שירות</div>
         </div>
-        <button data-filename="components/chatbot/ExportDialog" data-linenumber="154" data-visual-selector-id="components/chatbot/ExportDialog154" class="nolinx-chatbot-close" style="background: none; border: none; color: inherit; cursor: pointer">
+        <button data-filename="components/chatbot/ExportDialog" data-linenumber="163" data-visual-selector-id="components/chatbot/ExportDialog163" class="nolinx-chatbot-close" style="background: none; border: none; color: inherit; cursor: pointer">
           ✕
         </button>
       </div>
-      <div data-filename="components/chatbot/ExportDialog" data-linenumber="158" data-visual-selector-id="components/chatbot/ExportDialog158" class="nolinx-chatbot-messages"></div>
-      <div data-filename="components/chatbot/ExportDialog" data-linenumber="159" data-visual-selector-id="components/chatbot/ExportDialog159" class="nolinx-chatbot-input">
-        <input data-filename="components/chatbot/ExportDialog" data-linenumber="160" data-visual-selector-id="components/chatbot/ExportDialog160" type="text" placeholder="הקלד/י הודעה..." />
-        <button data-filename="components/chatbot/ExportDialog" data-linenumber="161" data-visual-selector-id="components/chatbot/ExportDialog161">שלח</button>
+      <div data-filename="components/chatbot/ExportDialog" data-linenumber="167" data-visual-selector-id="components/chatbot/ExportDialog167" class="nolinx-chatbot-messages"></div>
+      <div data-filename="components/chatbot/ExportDialog" data-linenumber="168" data-visual-selector-id="components/chatbot/ExportDialog168" class="nolinx-chatbot-input">
+        <input data-filename="components/chatbot/ExportDialog" data-linenumber="169" data-visual-selector-id="components/chatbot/ExportDialog169" type="text" placeholder="הקלד/י הודעה..." />
+        <button data-filename="components/chatbot/ExportDialog" data-linenumber="170" data-visual-selector-id="components/chatbot/ExportDialog170">שלח</button>
       </div>
     </div>
   `;
 
-  document.head.appendChild(style);
-  const container = document.createElement('div');
-  container.innerHTML = chatbotHTML;
   document.body.appendChild(container);
+  console.log("Chatbot HTML added to the page");
 
   const button = document.querySelector('.nolinx-chatbot-button');
   const chatWindow = document.querySelector('.nolinx-chatbot-window');
@@ -320,6 +327,13 @@
   const input = document.querySelector('.nolinx-chatbot-input input');
   const sendBtn = document.querySelector('.nolinx-chatbot-input button');
   const messages = document.querySelector('.nolinx-chatbot-messages');
+
+  if (!button || !chatWindow || !closeBtn || !input || !sendBtn || !messages) {
+    console.error("Chatbot elements not found!");
+    return;
+  }
+
+  console.log("Chatbot elements initialized");
 
   function addMessage(type, text) {
     const msg = document.createElement('div');
@@ -332,7 +346,7 @@
   function findAnswer(text) {
     const normalizedText = text.toLowerCase();
     for (const q of questions) {
-      if (q.keywords.some(k => normalizedText.includes(k.toLowerCase()))) {
+      if (q.keywords && q.keywords.some(k => normalizedText.includes(k.toLowerCase()))) {
         return q.answer;
       }
     }
@@ -355,7 +369,8 @@
   }
 
   button.addEventListener('click', () => {
-    chatWindow.style.display = chatWindow.style.display === 'none' ? 'flex' : 'none';
+    console.log("Chatbot button clicked");
+    chatWindow.style.display = chatWindow.style.display === 'flex' ? 'none' : 'flex';
     if (chatWindow.style.display === 'flex' && messages.children.length === 0) {
       addMessage('bot', config.welcomeMessage || 'שלום! כיצד אוכל לעזור?');
     }
@@ -366,7 +381,18 @@
   });
 
   sendBtn.addEventListener('click', handleSendMessage);
+  
   input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') handleSendMessage();
   });
-})();
+
+  console.log("NOLINX Chatbot initialized successfully!");
+});
+
+// גיבוי למקרה שאירוע DOMContentLoaded כבר התרחש
+if (document.readyState === 'loading') {
+  console.log("Document still loading, waiting for DOMContentLoaded");
+} else {
+  console.log("Document already loaded, triggering initialization");
+  document.dispatchEvent(new Event('DOMContentLoaded'));
+}
