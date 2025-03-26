@@ -1,0 +1,171 @@
+{
+  "config": {
+    "active": true,
+    "colors": {
+      "primary": "#22457c",
+      "secondary": "#2563EB",
+      "background": "#FFFFFF",
+      "text": "#1F2937",
+      "buttonText": "#FFFFFF"
+    },
+    "fonts": {
+      "main": "Heebo, sans-serif",
+      "size": "14px"
+    },
+    "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/877b4a_GeneratedImageMarch192025-3_10PMpng.jpeg",
+    "agentName": "נציג שירות",
+    "title": "שירות לקוחות",
+    "welcomeMessage": "שלום!! כיצד אוכל לעזור לך היום?",
+    "closingMessage": "תודה על פנייתך! נשמח לעזור בכל שאלה נוספת.",
+    "offlineMessage": "נציגינו אינם זמינים כרגע. אנא השאירו פרטים ונחזור אליכם בהקדם.",
+    "workHours": {
+      "active": false,
+      "timezone": "Asia/Jerusalem",
+      "sunday": {
+        "active": true,
+        "start": "09:00",
+        "end": "17:00"
+      },
+      "monday": {
+        "active": true,
+        "start": "09:00",
+        "end": "17:00"
+      },
+      "tuesday": {
+        "active": true,
+        "start": "09:00",
+        "end": "17:00"
+      },
+      "wednesday": {
+        "active": true,
+        "start": "09:00",
+        "end": "17:00"
+      },
+      "thursday": {
+        "active": true,
+        "start": "09:00",
+        "end": "17:00"
+      },
+      "friday": {
+        "active": true,
+        "start": "09:00",
+        "end": "14:00"
+      },
+      "saturday": {
+        "active": false,
+        "start": "00:00",
+        "end": "00:00"
+      }
+    },
+    "contactFormWebhook": null,
+    "buttonPosition": "bottom-right",
+    "id": "67e3b25c8e14e449d2f273b4",
+    "created_date": "2025-03-26T07:53:00.605000",
+    "updated_date": "2025-03-26T10:47:37.083000",
+    "created_by": "lirantb@gmail.com",
+    "is_sample": false
+  },
+  "questions": [
+    {
+      "question": "מה שעות הפעילות שלכם?",
+      "keywords": [
+        "שעות",
+        "פעילות",
+        "פתוח",
+        "עובדים"
+      ],
+      "answer": "אנחנו פעילים בימים א'-ה' בין השעות 9:00-17:00, ובימי שישי בין השעות 9:00-14:00.",
+      "category": "שירות לקוחות",
+      "order": 1,
+      "id": "67e3aee9d68b5aeb23b27487",
+      "created_date": "2025-03-26T07:38:17.393000",
+      "updated_date": "2025-03-26T07:38:17.393000",
+      "created_by": "lirantb@gmail.com",
+      "is_sample": false
+    },
+    {
+      "question": "איזה שירותי אוטומציה אתם מציעים?",
+      "keywords": [
+        "שירותים",
+        "אוטומציה",
+        "פתרונות",
+        "מציעים"
+      ],
+      "answer": "אנחנו מציעים מגוון רחב של שירותי אוטומציה עסקית, כולל אוטומציית תהליכים, אינטגרציית מערכות, אוטומציית שיווק, צ'אטבוטים ומערכות ניתוח נתונים חכמות. נשמח לדון בפרויקט הספציפי שלך!",
+      "category": "שירותים",
+      "order": 2,
+      "id": "67e3aee9d68b5aeb23b27488",
+      "created_date": "2025-03-26T07:38:17.393000",
+      "updated_date": "2025-03-26T07:38:17.393000",
+      "created_by": "lirantb@gmail.com",
+      "is_sample": false
+    },
+    {
+      "question": "כמה עולה להטמיע מערכת אוטומציה?",
+      "keywords": [
+        "עלות",
+        "מחיר",
+        "כמה עולה",
+        "תשלום",
+        "תקציב"
+      ],
+      "answer": "העלות של פרויקט אוטומציה תלויה במורכבות התהליכים שברצונך לאוטומט והמערכות שיש לחבר. אנחנו מציעים ייעוץ ראשוני ללא עלות והצעת מחיר מותאמת אישית. נשמח לדבר על הפרויקט שלך ולהתאים פתרון לתקציב שלך.",
+      "category": "מחירים",
+      "order": 3,
+      "id": "67e3aee9d68b5aeb23b27489",
+      "created_date": "2025-03-26T07:38:17.393000",
+      "updated_date": "2025-03-26T07:38:17.393000",
+      "created_by": "lirantb@gmail.com",
+      "is_sample": false
+    },
+    {
+      "question": "מה זה אוטומציה עסקית?",
+      "keywords": [
+        "מה זה",
+        "הסבר",
+        "אוטומציה עסקית",
+        "אוטומציה"
+      ],
+      "answer": "אוטומציה עסקית היא תהליך של שימוש בטכנולוגיה כדי להפוך משימות ותהליכים עסקיים ידניים לאוטומטיים. זה כולל חיבור בין מערכות שונות, אוטומציה של תהליכי עבודה וייעול זרימת המידע בארגון. המטרה היא לחסוך זמן, להפחית טעויות אנוש ולהגדיל את היעילות העסקית.",
+      "category": "מידע כללי",
+      "order": 4,
+      "id": "67e3aee9d68b5aeb23b2748a",
+      "created_date": "2025-03-26T07:38:17.393000",
+      "updated_date": "2025-03-26T07:38:17.393000",
+      "created_by": "lirantb@gmail.com",
+      "is_sample": false
+    },
+    {
+      "question": "כמה זמן לוקח להטמיע אוטומציה?",
+      "keywords": [
+        "זמן",
+        "כמה זמן",
+        "לוקח",
+        "משך",
+        "הטמעה"
+      ],
+      "answer": "משך הזמן להטמעת אוטומציה תלוי במורכבות הפרויקט. פרויקטים פשוטים יכולים להיות מוכנים תוך ימים ספורים, בעוד שפרויקטים מורכבים יותר עשויים להימשך מספר שבועות. בפגישת הייעוץ הראשונית נוכל לתת הערכה מדויקת יותר בהתאם לדרישות הספציפיות שלך.",
+      "category": "תהליך עבודה",
+      "order": 5,
+      "id": "67e3aee9d68b5aeb23b2748b",
+      "created_date": "2025-03-26T07:38:17.393000",
+      "updated_date": "2025-03-26T07:38:17.393000",
+      "created_by": "lirantb@gmail.com",
+      "is_sample": false
+    },
+    {
+      "question": "אך קוראים לי?",
+      "keywords": [
+        "לירן"
+      ],
+      "answer": "לירן טל ברטנטל",
+      "category": "כללי",
+      "order": 0,
+      "id": "67e3c2347890d9077516c4e9",
+      "created_date": "2025-03-26T09:00:36.082000",
+      "updated_date": "2025-03-26T09:00:36.082000",
+      "created_by": "lirantb@gmail.com",
+      "is_sample": false
+    }
+  ]
+}
